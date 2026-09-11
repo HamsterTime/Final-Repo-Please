@@ -54,10 +54,14 @@ struct ContentView: View {
                     }
                 }
                 .toolbar {
-                    Button {}
-                    label: {
-                        Text("Feedback Page")
-                        
+                    NavigationLink{
+                        Feedback()
+                    }label: {
+                        Button {}
+                        label: {
+                            Text("Feedback Page")
+                            
+                        }
                     }
                 }
             }
