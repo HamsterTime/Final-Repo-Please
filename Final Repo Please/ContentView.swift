@@ -66,6 +66,12 @@ struct ContentView: View {
                     "Main Game",
                     systemImage: "house"
                 )
+                .tabItem {
+                    Label(
+                        "Main Game",
+                        systemImage: "house"
+                    )
+                }
             }
             }
         
