@@ -54,28 +54,24 @@ struct ContentView: View {
                     }
                 }
                 .toolbar {
-                    NavigationLink{
-                        Feedback()
-                    }label: {
-                        Button {}
-                        label: {
-                            Text("Feedback Page")
-                            
-                        }
-                    }
-                }
-            }
+                    ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink("Feedback Page") {
+                                           Feedback()
+                                       }
+                                   }
+                               }
+                           }
             .tabItem {
                 Label(
                     "Main Game",
                     systemImage: "house"
                 )
             }
+            }
         
                 
             }
         }
-    }
 
 
 
