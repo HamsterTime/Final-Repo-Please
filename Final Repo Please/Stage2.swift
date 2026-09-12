@@ -10,12 +10,22 @@ import SwiftUI
 struct Stage2: View {
     @Binding var Tiggle: Bool
     var body: some View {
-        ZStack{
-            Rectangle()
-                .frame(width: .infinity, height: 100)
-            Toggle("Final Toggle Game", isOn: $Tiggle)
-                .foregroundStyle(.white)
-                .bold()
+        VStack{
+            Text("Try Pressing This White Button")
+            ZStack{
+                Rectangle()
+                    .frame(width: .infinity, height: 100)
+                Toggle("Final Toggle Game", isOn: $Tiggle)
+                    .foregroundStyle(.white)
+                    .bold()
+            }
+            if Tiggle == true{
+                Text("On")
+            }
+            if Tiggle == false{
+                Text("Off")
+            }
+            
         }
     }
 }

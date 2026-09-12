@@ -13,6 +13,7 @@ struct ContentView: View {
         TabView{
             NavigationStack{
                 VStack{
+                    Text("Try Pressing These Buttons")
                     ZStack{
                         Circle()
                             .frame(width:100, height:100)
