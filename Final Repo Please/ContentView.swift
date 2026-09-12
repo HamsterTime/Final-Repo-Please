@@ -52,34 +52,50 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                     }
+                    if counter == true{
+                        
+                    }
                 }
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink("Feedback Page") {
-                                           Feedback()
-                                       }
-                                   }
-                               }
-                           }
+                        NavigationLink("Feedback Page") {
+                            Feedback()
+                        }
+                    }
+                }
+                
+                .navigationTitle("Tutorial To Toggle Stuff")
+            }
             .tabItem {
                 Label(
                     "Main Game",
                     systemImage: "house"
                 )
+            }
+            NavigationStack{
+                VStack{
+                    Text("Not Useless at all - Fresh Tomatoes")
+                    Text("10/10 useful - States Times")
+                    Text("Now I know How To Turn Things Off or On - BNA")
+                    Text("Most Addicting Tutorial - PopaPola")
+                    Text("Ekansh Approved - Not Fake Ekansh")
+                    Spacer()
+                }
+                .navigationTitle("Cool Sponsors Not Fake")
+            }
                 .tabItem {
                     Label(
-                        "Main Game",
-                        systemImage: "house"
+                        "Words From Sponsors",
+                        systemImage: "star.fill"
                     )
                 }
-            }
-            }
-        
-                
-            }
+            
+            
+            
         }
-
-
+    }
+    
+}
 
 #Preview {
     ContentView()
