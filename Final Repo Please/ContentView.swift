@@ -53,7 +53,11 @@ struct ContentView: View {
                         .cornerRadius(10)
                     }
                     if counter == true{
-                        
+                        NavigationLink{
+                            Stage2(Tiggle: $counter)
+                        }label:{
+                            Text("Next Lesson For Toggling")
+                        }
                     }
                 }
                 .toolbar {
