@@ -40,7 +40,7 @@ struct Feedback: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             if submit == true{
-                Text("We Do Not Read Feedback You Wasted Your Time")
+                Text("Thank You For Your Feedback But It Will Not Reach Us")
             }
         }
     }
